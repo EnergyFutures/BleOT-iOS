@@ -5,6 +5,8 @@
 //  Created by jofu on 27/04/15.
 //  Copyright (c) 2015 ITU. All rights reserved.
 //
+// This gets created by Xcode and is used to define functions for different events (application start, background, closed...)
+// right now it's purely default
 
 import UIKit
 import CoreData

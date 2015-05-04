@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		D6C119551AEE27590023B422 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C119541AEE27590023B422 /* AppDelegate.swift */; };
 		D6C119581AEE27590023B422 /* BleOT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D6C119561AEE27590023B422 /* BleOT.xcdatamodeld */; };
-		D6C1195A1AEE27590023B422 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C119591AEE27590023B422 /* ViewController.swift */; };
 		D6C1195D1AEE27590023B422 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6C1195B1AEE27590023B422 /* Main.storyboard */; };
 		D6C1195F1AEE27590023B422 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6C1195E1AEE27590023B422 /* Images.xcassets */; };
 		D6C119621AEE27590023B422 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C119601AEE27590023B422 /* LaunchScreen.xib */; };
 		D6C1196E1AEE27590023B422 /* BleOTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C1196D1AEE27590023B422 /* BleOTTests.swift */; };
+		D6C119781AEE27E40023B422 /* BleOT.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C119771AEE27E40023B422 /* BleOT.swift */; };
+		D6C1197E1AEF6BD00023B422 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C1197D1AEF6BD00023B422 /* LocationViewController.swift */; };
+		D6C119801AEF6E2F0023B422 /* SelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C1197F1AEF6E2F0023B422 /* SelectedViewController.swift */; };
+		D6C119821AEFA9820023B422 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C119811AEFA9820023B422 /* ViewController.swift */; };
+		D6C119841AEFAC170023B422 /* LocationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C119831AEFAC170023B422 /* LocationsTableViewCell.swift */; };
+		D6C119861AEFACEA0023B422 /* SelectedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C119851AEFACEA0023B422 /* SelectedTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +36,18 @@
 		D6C119531AEE27590023B422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6C119541AEE27590023B422 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6C119571AEE27590023B422 /* BleOT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BleOT.xcdatamodel; sourceTree = "<group>"; };
-		D6C119591AEE27590023B422 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D6C1195C1AEE27590023B422 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6C1195E1AEE27590023B422 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D6C119611AEE27590023B422 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D6C119671AEE27590023B422 /* BleOTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BleOTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C1196C1AEE27590023B422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6C1196D1AEE27590023B422 /* BleOTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleOTTests.swift; sourceTree = "<group>"; };
+		D6C119771AEE27E40023B422 /* BleOT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BleOT.swift; sourceTree = "<group>"; };
+		D6C1197D1AEF6BD00023B422 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = LocationViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D6C1197F1AEF6E2F0023B422 /* SelectedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SelectedViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D6C119811AEFA9820023B422 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D6C119831AEFAC170023B422 /* LocationsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsTableViewCell.swift; sourceTree = "<group>"; };
+		D6C119851AEFACEA0023B422 /* SelectedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +90,12 @@
 			isa = PBXGroup;
 			children = (
 				D6C119541AEE27590023B422 /* AppDelegate.swift */,
-				D6C119591AEE27590023B422 /* ViewController.swift */,
+				D6C1197D1AEF6BD00023B422 /* LocationViewController.swift */,
+				D6C119811AEFA9820023B422 /* ViewController.swift */,
+				D6C1197F1AEF6E2F0023B422 /* SelectedViewController.swift */,
+				D6C119851AEFACEA0023B422 /* SelectedTableViewCell.swift */,
+				D6C119831AEFAC170023B422 /* LocationsTableViewCell.swift */,
+				D6C119771AEE27E40023B422 /* BleOT.swift */,
 				D6C1195B1AEE27590023B422 /* Main.storyboard */,
 				D6C1195E1AEE27590023B422 /* Images.xcassets */,
 				D6C119601AEE27590023B422 /* LaunchScreen.xib */,
@@ -215,8 +230,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6C1195A1AEE27590023B422 /* ViewController.swift in Sources */,
+				D6C119781AEE27E40023B422 /* BleOT.swift in Sources */,
+				D6C119841AEFAC170023B422 /* LocationsTableViewCell.swift in Sources */,
+				D6C1197E1AEF6BD00023B422 /* LocationViewController.swift in Sources */,
 				D6C119581AEE27590023B422 /* BleOT.xcdatamodeld in Sources */,
+				D6C119861AEFACEA0023B422 /* SelectedTableViewCell.swift in Sources */,
+				D6C119801AEF6E2F0023B422 /* SelectedViewController.swift in Sources */,
+				D6C119821AEFA9820023B422 /* ViewController.swift in Sources */,
 				D6C119551AEE27590023B422 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,7 +368,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BleOT/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DDEBUG";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -358,7 +380,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BleOT/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DRELEASE";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -415,6 +439,7 @@
 				D6C119731AEE27590023B422 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D6C119741AEE27590023B422 /* Build configuration list for PBXNativeTarget "BleOTTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +448,7 @@
 				D6C119761AEE27590023B422 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
