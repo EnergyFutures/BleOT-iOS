@@ -1,6 +1,6 @@
 //
-//  BleOT.swift
-//  BleOT
+//  BLEoT.swift
+//  BLEoT
 //
 //  Created by jofu on 27/04/15.
 //  Copyright (c) 2015 ITU. All rights reserved.
@@ -11,7 +11,7 @@ import CoreBluetooth
 
 
 let deviceName = 0xDDDD
-let BleOTManufactorData = "dddd344432310000290702000000030000"
+let BLEoTManufactorData = "dddd344432310000290702000000030000"
 
 let ServiceMeasurementValueUUID = CBUUID(string: "FFA2")
 let CharMeasurementValueUUID = CBUUID(string: "FF04")
@@ -24,7 +24,7 @@ func println(object: Any) {
     #endif
 }
 
-class BleOT {
+class BLEoT {
     
     // gets called when any ble node gets found, returns the hex string of the manufactor data if bleot node or nil if not a bleot node
     class func bleotFound (advertisementData: [NSObject : AnyObject]!) -> [String]? {

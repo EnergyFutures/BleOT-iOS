@@ -12,8 +12,8 @@
 		D6C1195D1AEE27590023B422 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6C1195B1AEE27590023B422 /* Main.storyboard */; };
 		D6C1195F1AEE27590023B422 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6C1195E1AEE27590023B422 /* Images.xcassets */; };
 		D6C119621AEE27590023B422 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6C119601AEE27590023B422 /* LaunchScreen.xib */; };
-		D6C1196E1AEE27590023B422 /* BleOTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C1196D1AEE27590023B422 /* BleOTTests.swift */; };
-		D6C119781AEE27E40023B422 /* BleOT.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C119771AEE27E40023B422 /* BleOT.swift */; };
+		D6C1196E1AEE27590023B422 /* BLEoTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C1196D1AEE27590023B422 /* BLEoTTests.swift */; };
+		D6C119781AEE27E40023B422 /* BLEoT.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C119771AEE27E40023B422 /* BLEoT.swift */; };
 		D6C1197E1AEF6BD00023B422 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C1197D1AEF6BD00023B422 /* LocationViewController.swift */; };
 		D6C119801AEF6E2F0023B422 /* SelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C1197F1AEF6E2F0023B422 /* SelectedViewController.swift */; };
 		D6C119821AEFA9820023B422 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C119811AEFA9820023B422 /* ViewController.swift */; };
@@ -34,20 +34,20 @@
 /* Begin PBXFileReference section */
 		D6C1194F1AEE27590023B422 /* BleOT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BleOT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C119531AEE27590023B422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6C119541AEE27590023B422 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D6C119541AEE27590023B422 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D6C119571AEE27590023B422 /* BleOT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BleOT.xcdatamodel; sourceTree = "<group>"; };
 		D6C1195C1AEE27590023B422 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6C1195E1AEE27590023B422 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D6C119611AEE27590023B422 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D6C119671AEE27590023B422 /* BleOTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BleOTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C1196C1AEE27590023B422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6C1196D1AEE27590023B422 /* BleOTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleOTTests.swift; sourceTree = "<group>"; };
-		D6C119771AEE27E40023B422 /* BleOT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BleOT.swift; sourceTree = "<group>"; };
+		D6C1196D1AEE27590023B422 /* BLEoTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = BLEoTTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D6C119771AEE27E40023B422 /* BLEoT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = BLEoT.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D6C1197D1AEF6BD00023B422 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = LocationViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D6C1197F1AEF6E2F0023B422 /* SelectedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SelectedViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D6C119811AEFA9820023B422 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D6C119831AEFAC170023B422 /* LocationsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsTableViewCell.swift; sourceTree = "<group>"; };
-		D6C119851AEFACEA0023B422 /* SelectedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedTableViewCell.swift; sourceTree = "<group>"; };
+		D6C119831AEFAC170023B422 /* LocationsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = LocationsTableViewCell.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		D6C119851AEFACEA0023B422 /* SelectedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SelectedTableViewCell.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +71,8 @@
 		D6C119461AEE27590023B422 = {
 			isa = PBXGroup;
 			children = (
-				D6C119511AEE27590023B422 /* BleOT */,
-				D6C1196A1AEE27590023B422 /* BleOTTests */,
+				D6C119511AEE27590023B422 /* BLEoT */,
+				D6C1196A1AEE27590023B422 /* BLEoTTests */,
 				D6C119501AEE27590023B422 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,7 +86,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D6C119511AEE27590023B422 /* BleOT */ = {
+		D6C119511AEE27590023B422 /* BLEoT */ = {
 			isa = PBXGroup;
 			children = (
 				D6C119541AEE27590023B422 /* AppDelegate.swift */,
@@ -95,13 +95,14 @@
 				D6C1197F1AEF6E2F0023B422 /* SelectedViewController.swift */,
 				D6C119851AEFACEA0023B422 /* SelectedTableViewCell.swift */,
 				D6C119831AEFAC170023B422 /* LocationsTableViewCell.swift */,
-				D6C119771AEE27E40023B422 /* BleOT.swift */,
+				D6C119771AEE27E40023B422 /* BLEoT.swift */,
 				D6C1195B1AEE27590023B422 /* Main.storyboard */,
 				D6C1195E1AEE27590023B422 /* Images.xcassets */,
 				D6C119601AEE27590023B422 /* LaunchScreen.xib */,
 				D6C119561AEE27590023B422 /* BleOT.xcdatamodeld */,
 				D6C119521AEE27590023B422 /* Supporting Files */,
 			);
+			name = BLEoT;
 			path = BleOT;
 			sourceTree = "<group>";
 		};
@@ -113,12 +114,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D6C1196A1AEE27590023B422 /* BleOTTests */ = {
+		D6C1196A1AEE27590023B422 /* BLEoTTests */ = {
 			isa = PBXGroup;
 			children = (
-				D6C1196D1AEE27590023B422 /* BleOTTests.swift */,
+				D6C1196D1AEE27590023B422 /* BLEoTTests.swift */,
 				D6C1196B1AEE27590023B422 /* Supporting Files */,
 			);
+			name = BLEoTTests;
 			path = BleOTTests;
 			sourceTree = "<group>";
 		};
@@ -133,9 +135,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D6C1194E1AEE27590023B422 /* BleOT */ = {
+		D6C1194E1AEE27590023B422 /* BLEoT */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D6C119711AEE27590023B422 /* Build configuration list for PBXNativeTarget "BleOT" */;
+			buildConfigurationList = D6C119711AEE27590023B422 /* Build configuration list for PBXNativeTarget "BLEoT" */;
 			buildPhases = (
 				D6C1194B1AEE27590023B422 /* Sources */,
 				D6C1194C1AEE27590023B422 /* Frameworks */,
@@ -145,14 +147,14 @@
 			);
 			dependencies = (
 			);
-			name = BleOT;
+			name = BLEoT;
 			productName = BleOT;
 			productReference = D6C1194F1AEE27590023B422 /* BleOT.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D6C119661AEE27590023B422 /* BleOTTests */ = {
+		D6C119661AEE27590023B422 /* BLEoTTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D6C119741AEE27590023B422 /* Build configuration list for PBXNativeTarget "BleOTTests" */;
+			buildConfigurationList = D6C119741AEE27590023B422 /* Build configuration list for PBXNativeTarget "BLEoTTests" */;
 			buildPhases = (
 				D6C119631AEE27590023B422 /* Sources */,
 				D6C119641AEE27590023B422 /* Frameworks */,
@@ -163,7 +165,7 @@
 			dependencies = (
 				D6C119691AEE27590023B422 /* PBXTargetDependency */,
 			);
-			name = BleOTTests;
+			name = BLEoTTests;
 			productName = BleOTTests;
 			productReference = D6C119671AEE27590023B422 /* BleOTTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -186,7 +188,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D6C1194A1AEE27590023B422 /* Build configuration list for PBXProject "BleOT" */;
+			buildConfigurationList = D6C1194A1AEE27590023B422 /* Build configuration list for PBXProject "BLEoT" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -199,8 +201,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D6C1194E1AEE27590023B422 /* BleOT */,
-				D6C119661AEE27590023B422 /* BleOTTests */,
+				D6C1194E1AEE27590023B422 /* BLEoT */,
+				D6C119661AEE27590023B422 /* BLEoTTests */,
 			);
 		};
 /* End PBXProject section */
@@ -230,7 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6C119781AEE27E40023B422 /* BleOT.swift in Sources */,
+				D6C119781AEE27E40023B422 /* BLEoT.swift in Sources */,
 				D6C119841AEFAC170023B422 /* LocationsTableViewCell.swift in Sources */,
 				D6C1197E1AEF6BD00023B422 /* LocationViewController.swift in Sources */,
 				D6C119581AEE27590023B422 /* BleOT.xcdatamodeld in Sources */,
@@ -245,7 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6C1196E1AEE27590023B422 /* BleOTTests.swift in Sources */,
+				D6C1196E1AEE27590023B422 /* BLEoTTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +256,7 @@
 /* Begin PBXTargetDependency section */
 		D6C119691AEE27590023B422 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D6C1194E1AEE27590023B422 /* BleOT */;
+			target = D6C1194E1AEE27590023B422 /* BLEoT */;
 			targetProxy = D6C119681AEE27590023B422 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -423,7 +425,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D6C1194A1AEE27590023B422 /* Build configuration list for PBXProject "BleOT" */ = {
+		D6C1194A1AEE27590023B422 /* Build configuration list for PBXProject "BLEoT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D6C1196F1AEE27590023B422 /* Debug */,
@@ -432,7 +434,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D6C119711AEE27590023B422 /* Build configuration list for PBXNativeTarget "BleOT" */ = {
+		D6C119711AEE27590023B422 /* Build configuration list for PBXNativeTarget "BLEoT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D6C119721AEE27590023B422 /* Debug */,
@@ -441,7 +443,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D6C119741AEE27590023B422 /* Build configuration list for PBXNativeTarget "BleOTTests" */ = {
+		D6C119741AEE27590023B422 /* Build configuration list for PBXNativeTarget "BLEoTTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D6C119751AEE27590023B422 /* Debug */,

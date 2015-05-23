@@ -1,6 +1,6 @@
 //
-//  BleOTTests.swift
-//  BleOTTests
+//  BLEoTTests.swift
+//  BLEoTTests
 //
 //  Created by jofu on 27/04/15.
 //  Copyright (c) 2015 ITU. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class BleOTTests: XCTestCase {
+class BLEoTTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

@@ -1,6 +1,6 @@
 //
 //  LocationViewController.swift
-//  BleOT
+//  BLEoT
 //
 //  Created by jofu on 28/04/15.
 //  Copyright (c) 2015 ITU. All rights reserved.
@@ -72,44 +72,50 @@ class LocationViewController: ViewController, CBCentralManagerDelegate, CBPeriph
         }
     }
     
-    // Check out the discovered peripherals for BleOT nodes NOTE didDiscoverPeripheral makes this being called when periphal is discovered
+    // Check out the discovered peripherals for BLEoT nodes NOTE didDiscoverPeripheral makes this being called when periphal is discovered
     func centralManager(central: CBCentralManager!, didDiscoverPeripheral peripheral: CBPeripheral!, advertisementData: [NSObject : AnyObject]!, RSSI: NSNumber!) {
         println("advertisementData \(advertisementData)")
         println("SCANNING")
-        if let p = BleOT.bleotFound(advertisementData) {
-            self.statusLabel.text = "BleOT found :-)"
-            println("Found BleOT node")
+        if let p = BLEoT.bleotFound(advertisementData) {
+            self.statusLabel.text = "BLEoT found :-)"
+            println("Found BLEoT node")
             println("VIEW CONTROLLER\n\n")
             println(NSStringFromClass(self.dynamicType))
             println("VIEW CONTROLLER\n\n")
             println("Hurra!")
             println(p)
-            let location : String = BleOT.getLocation(p)
+            let location : String = BLEoT.getLocation(p)
             println("Location: \(location)")
-            let startPos : Int = BleOT.getStartPos(p)
+            let startPos : Int = BLEoT.getStartPos(p)
             println("startPos: \(startPos)")
-            let reading : Double = BleOT.getReading(p, startPos: startPos)
+            let reading : Double = BLEoT.getReading(p, startPos: startPos)
             println("reading: \(reading)")
-            let buffer : Int = BleOT.getBuffer(p, startPos: startPos)
+            let buffer : Int = BLEoT.getBuffer(p, startPos: startPos)
             println("buffer: \(buffer)")
-            let misc : String = BleOT.getMisc(p, startPos: startPos)
+            let misc : String = BLEoT.getMisc(p, startPos: startPos)
             println("misc: \(misc)")
-            let battery : Int = BleOT.getBattery(misc)
+            let battery : Int = BLEoT.getBattery(misc)
             println("battery: \(battery)")
-            let bufferBin : String = BleOT.getBufferBinary(misc)
+            let bufferBin : String = BLEoT.getBufferBinary(misc)
             println("bufferBin: \(bufferBin)")
-            let typeBin : String = BleOT.getTypeBinary(misc)
+            let typeBin : String = BLEoT.getTypeBinary(misc)
             println("typeBin: \(typeBin)")
-            let type : String = BleOT.getType(p, startPos: startPos)
+            let type : String = BLEoT.getType(p, startPos: startPos)
             println("type: \(type)")
-            let coord : String = BleOT.getCoordinates(p, startPos: startPos)
+            let coord : String = BLEoT.getCoordinates(p, startPos: startPos)
             println("coord: \(coord)")
-            let id : Int = BleOT.getID(p, startPos: startPos)
+            let id : Int = BLEoT.getID(p, startPos: startPos)
             println("ID: \(id)")
-            let name = (advertisementData as NSDictionary).objectForKey(CBAdvertisementDataLocalNameKey)!.description as String //NOTE this is name of mode!!
+            var name : String
+            if (advertisementData as NSDictionary).objectForKey(CBAdvertisementDataLocalNameKey) != nil {
+                name = (advertisementData as NSDictionary).objectForKey(CBAdvertisementDataLocalNameKey)!.description as String //NOTE this is name of mode!!
+            } else {
+                name = "BLEoTMote"
+                
+            }
             println("name: \(name)")
-            let unit : String = BleOT.getUnit(type)
-            let changed : Bool = BleOT.addLocation(&allLocationLabels, location: location)
+            let unit : String = BLEoT.getUnit(type)
+            let changed : Bool = BLEoT.addLocation(&allLocationLabels, location: location)
             if changed{
                 self.bleotTableView.reloadData()
             }
@@ -128,7 +134,7 @@ class LocationViewController: ViewController, CBCentralManagerDelegate, CBPeriph
                     sensor.name = name
                     sensor.unit = unit
                     println(sensor.name)
-                    var newSensor : Bool = BleOT.addSensor(&allSensors, sensor: sensor)
+                    var newSensor : Bool = BLEoT.addSensor(&allSensors, sensor: sensor)
                     if newSensor {
                         self.bleotTableView.reloadData()
                         NSNotificationCenter.defaultCenter().postNotificationName("load", object: nil)
@@ -181,7 +187,7 @@ class LocationViewController: ViewController, CBCentralManagerDelegate, CBPeriph
         for service in peripheral.services {
             println("service.description \(service.description)")
             let thisService = service as! CBService
-            if BleOT.validService(thisService) {
+            if BLEoT.validService(thisService) {
                 // Discover characteristics of all valid services
                 println("SERVICE")
                 
@@ -201,7 +207,7 @@ class LocationViewController: ViewController, CBCentralManagerDelegate, CBPeriph
         for charateristic in service.characteristics {
             println("charateristic \(charateristic.description)")
             let thisCharacteristic = charateristic as! CBCharacteristic
-            if BleOT.validDataCharacteristic(thisCharacteristic) {
+            if BLEoT.validDataCharacteristic(thisCharacteristic) {
                 println("CHAR")
                 // Enable Sensor Notification
                 self.sensorTagPeripheral.setNotifyValue(true, forCharacteristic: thisCharacteristic)
@@ -215,7 +221,7 @@ class LocationViewController: ViewController, CBCentralManagerDelegate, CBPeriph
         self.statusLabel.text = "Connected to Node"
         
         if characteristic.UUID == CharMeasurementValueUUID {
-            let hexArray = BleOT.getHexArray(characteristic.value.description)
+            let hexArray = BLEoT.getHexArray(characteristic.value.description)
             //            var hexArray = [String]()
             println("FOUND BLE_UUID_ITU_MEASUREMENT_VALUE_CHAR")
             println(characteristic.value)
@@ -229,13 +235,13 @@ class LocationViewController: ViewController, CBCentralManagerDelegate, CBPeriph
                 emptying = false
             }
             else {
-                var reading : Double = BleOT.getReading2( Array(hexArray[(0)..<(4)]))
-                var seq : Int = BleOT.getSequenceNo( Array(hexArray[(4)..<(8)]))
+                var reading : Double = BLEoT.getReading2( Array(hexArray[(0)..<(4)]))
+                var seq : Int = BLEoT.getSequenceNo( Array(hexArray[(4)..<(8)]))
                 var re = Reading(r:reading, s:seq)
                 readings.rs.append(re)
                 if hexArray.count == 16 {
-                    BleOT.getReading2( Array(hexArray[(8)..<(12)]))
-                    BleOT.getSequenceNo( Array(hexArray[(12)..<(16)]))
+                    BLEoT.getReading2( Array(hexArray[(8)..<(12)]))
+                    BLEoT.getSequenceNo( Array(hexArray[(12)..<(16)]))
                 }
             }
         }

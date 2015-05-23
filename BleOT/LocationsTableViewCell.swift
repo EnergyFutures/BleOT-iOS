@@ -1,6 +1,6 @@
 //
-//  BleOTTableViewCell.swift
-//  BleOT
+//  BLEoTTableViewCell.swift
+//  BLEoT
 //
 //  Created by jofu on 27/04/15.
 //  Copyright (c) 2015 ITU. All rights reserved.
